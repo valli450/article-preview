@@ -1,0 +1,228 @@
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Style */
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--light-grayish-blue);
+    color: var(--very-dark-grayish-blue);
+}
+
+p{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--desaturated-dark-blue);
+}
+
+nav{
+    margin: 5rem;
+}
+
+footer{
+    margin: 5rem;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.links{
+    margin-left: -3rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Style */
+.whale-section{
+    
+    width: 25rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.whale-section .photo img{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 20px 20px 0  0;
+}  
+
+.whale-section .text{
+    padding: 3rem 2rem 2rem 2rem;
+
+}
+
+.whale-section .text .head-text{
+    padding-bottom: 1rem;
+}
+
+.whale-section .text .head-text h2{
+    font-size: 20px;
+    line-height: 1.4rem;
+}
+
+.whale-section .text .paragraph p{
+    line-height: 1.4rem;
+}
+
+.whale-section .text .about-section .share-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    width: 25rem;
+    left: 0rem;
+    margin-top: -1rem;
+    border-radius: 0 0 20px 20px;
+    padding: 0 2rem 0 1rem;
+}
+
+.whale-section .text .share-section.action{
+    height: 6rem;
+    overflow: auto;
+}
+
+.whale-section .text .about-section #share-text{
+    padding-left: 1rem;
+    margin-right: -1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.whale-section .text .about-section .share-icon{
+    background-color: var(--light-grayish-blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+
+.whale-section .text .about-section .avatar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.whale-section .text .about-section .avatar-section .avatar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.whale-section .text .about-section .avatar-section .avatar img{
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.whale-section .text .about-section .avatar-section .avatar-name{
+    padding-left: 1rem;
+
+}
+
+.whale-section .text .about-section .avatar-section .avatar-name .name{
+    font-weight: 700;
+    padding-bottom: 0.2rem;
+}
+
+.whale-section .text .about-section .avatar-section .share-icon {
+    background-color: var(--light-grayish-blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.5rem;
+}   
+
+.whale-section .text .about-section .avatar-section .share-icon img{
+    width: 1rem;
+    height: 1rem;
+}
+
+#share-button{
+    cursor: pointer;
+}
+
+#remove-button{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    body{
+        background-color: var(--light-grayish-blue)
+    }
+    .whale-section{
+        background-color: #fff;
+        display: flex;
+        width: 50rem;
+        justify-content: center;
+    }
+
+    .whale-section .photo img{
+        height:100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .whale-section .text .about-section .share-section{ 
+        position: relative;
+        width: 16rem;
+        margin-left: 50%;        
+        margin-top: 10%;
+        border-radius: 20px 20px 20px 20px;
+        overflow: hidden;
+    }
+
+
+    .whale-section .text .share-section.action{
+        height: 3rem;
+        overflow: auto;
+        
+    }
+
+    #remove-button{
+        display: none;
+    }
+
+    .share-icon{
+        background-color: var(--very-dark-grayish-blue);
+    }
+
+    #share-text{
+        letter-spacing: 0.1rem;
+
+    }
+
+    #hide-for-mobile{
+        background-color: var(--very-dark-grayish-blue);
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repear(3, 1fr);
+        margin-left: 5rem;
+    }
+
+    .whale-section .text .about-section .share-icon{
+        background-color: var(--very-dark-grayish-blue)
+    }
+}
